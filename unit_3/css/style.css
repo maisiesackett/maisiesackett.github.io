@@ -11,6 +11,10 @@ nav a {
 	margin-right: 20px;
 }
 
+h2 {
+	text-transform: uppercase;
+}
+
 img {
 	width: 300px;
 }
@@ -24,7 +28,11 @@ footer {
 }
 
 #hero {
+	background-image: url(images/wangama-kids.jpg);
 	width: 100%;
+	position: relative;
+	color: #ffffff;
+	text-align: center;
 }
 
 .gallery {
