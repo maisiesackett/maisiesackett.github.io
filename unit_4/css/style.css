@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Literata:400,600,700|Muli:500,700&display=swap);
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 16px;
+	text-align: center;
+}
+
+header {
+	background-image: url(images/wangama-walking.jpg);
+	background-size: cover;
+	color: #000;
+	text-align: center;
+}
+
+section {
+	font-size: 1em;
+	width: 30em;
+	margin: 20px;
+}
+
+nav a {
+	margin-right: 20px;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .25em; 
+	border-bottom: none;
+	font-family: 'Muli', 'Arial', sans-serif;
+	color: #000;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px solid #000;
+}
+
+h2 {
+	font-family: 'Muli', 'Arial', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+p, label {
+	font-family: 'Muli', 'Arial', sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+ul {
+	list-style-type: none;
+	padding: 20px;
+}
+
+.header {
+	padding: 10px;
+	text-decoration: none;
+	border-bottom: none;
+	color: #fff;
+	font-family: 'Muli', 'Arial', sans-serif;
+	font-weight: 500;
+	font-size: 1.5em;
+	line-height: 2em;
+	width: 30em;
+	display: inline-block;
+}
+
+.gallery {
+	width: 10em;
+}
+
+.social {
+	width: 1.5em;
+	text-decoration: none;
+	border-bottom: none;
+}
+
+#icon {
+	width: 4em;
+}
