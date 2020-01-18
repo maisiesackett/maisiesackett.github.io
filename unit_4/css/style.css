@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Literata:400,600,700|Muli:500,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Muli:500,700&display=swap);
 
 * {
 	padding: 0;
@@ -19,7 +19,7 @@ header {
 
 section {
 	font-size: 1em;
-	width: 30em;
+	width: 60em;
 	margin: 20px;
 }
 
