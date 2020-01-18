@@ -17,12 +17,6 @@ header {
 	text-align: center;
 }
 
-section {
-	font-size: 1em;
-	width: 60em;
-	margin: 20px;
-}
-
 nav a {
 	margin-right: 20px;
 	padding: 0 20px;
@@ -36,6 +30,12 @@ nav a {
 	font-size: 1em;
 }
 
+section {
+	font-size: 1em;
+	width: 60em;
+	margin: 20px;
+}
+
 a {
 	text-decoration: none;
 	color: #000;
@@ -43,6 +43,7 @@ a {
 }
 
 h2 {
+	padding: 10px;
 	font-family: 'Muli', 'Arial', sans-serif;
 	font-weight: 700;
 	font-size: 2em;
