@@ -7,55 +7,55 @@
 
 body {
 	margin: auto;
-	font-family: 'Muli', 'Arial', sans-serif;
 	font-size: 16px;
-	font-weight: 500;
-	line-height: 1.5em;
-	text-align: left;
-	color: #222;
+	text-align: center;
 }
 
 header {
 	background-image: url(images/wangama-walking.jpg);
 	background-size: cover;
+	color: #000;
 	text-align: center;
-	padding: 20px;
 }
 
 nav a {
 	margin-right: 20px;
-	padding: 10px;
-	color: #222;
+	padding: 0 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: .25em; 
 	border-bottom: none;
+	font-family: 'Muli', 'Arial', sans-serif;
+	color: #000;
 	font-weight: 700;
-	display: inline-block;
+	font-size: 1em;
 }
 
 section {
-	width: 50em;
-	margin:	auto;
-	padding: 20px;
-}
-
-footer {
-	margin: auto;
+	font-size: 1em;
+	width: 60em;
+	margin: 20px;
 }
 
 a {
 	text-decoration: none;
-	color: #222;
-	border-bottom: 1px solid #222;
+	color: #000;
+	border-bottom: 1px solid #000;
 }
 
 h2 {
 	padding: 10px;
+	font-family: 'Muli', 'Arial', sans-serif;
 	font-weight: 700;
 	font-size: 2em;
 	text-transform: uppercase;
-	text-align: center;
+}
+
+p, label {
+	font-family: 'Muli', 'Arial', sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 ul {
@@ -64,33 +64,28 @@ ul {
 }
 
 .header {
-	padding: 20px;
-	margin: auto;
+	padding: 10px;
 	text-decoration: none;
 	border-bottom: none;
 	color: #fff;
+	font-family: 'Muli', 'Arial', sans-serif;
 	font-weight: 500;
 	font-size: 1.5em;
+	line-height: 2em;
 	width: 30em;
+	display: inline-block;
 }
 
 .gallery {
 	width: 10em;
-	margin: 0;
 }
 
 .social {
-	width: 2em;
+	width: 1.5em;
 	text-decoration: none;
 	border-bottom: none;
 }
 
-#header-img {
-	width: 30em;
-	margin: auto;
-}
-
 #icon {
 	width: 4em;
-	vertical-align: middle;
 }
