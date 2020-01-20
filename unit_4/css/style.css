@@ -42,6 +42,7 @@ section {
 
 footer {
 	margin: auto;
+	background: rgba(245,245,220,.5);
 	text-align: center;
 }
 
@@ -98,4 +99,14 @@ form {
 #icon {
 	width: 4em;
 	vertical-align: middle;
+}
+
+#waystohelp {
+	background: rgba(245,245,220,.5);
+}
+
+#join {
+	background: #222;
+	width: 100%;
+	color: #fff;
 }
