@@ -42,6 +42,7 @@ section {
 
 footer {
 	margin: auto;
+	text-align: center;
 }
 
 a {
@@ -62,6 +63,10 @@ ul {
 	list-style-type: none;
 }
 
+form {
+	text-align: center;
+}
+
 .header {
 	padding: 20px;
 	margin: auto;
@@ -75,7 +80,8 @@ ul {
 
 .gallery {
 	width: 10em;
-	margin: 0;
+	margin-right: 20px;
+	display: inline-block;
 }
 
 .social {
