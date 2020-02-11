@@ -9,7 +9,7 @@
 body {
 	margin: auto;
 	font-family: 'Muli', 'Arial', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 500;
 	line-height: 2em;
 	text-align: left;
@@ -26,16 +26,17 @@ header {
 header > img {
 	width: 30em;
 	margin: auto;
+	padding: 1em 0 0 0;
+}
+
+nav {
+	background: rgba(245,235,220,.5)
 }
 
 nav a {
-	margin-right: 1em;
 	padding: 1em;
 	color: #222;
-	text-decoration: none;
-	text-transform: uppercase;
 	letter-spacing: .25em; 
-	border-bottom: none;
 	font-weight: 700;
 	display: inline-block;
 }
@@ -54,15 +55,13 @@ section {
 footer {
 	margin: auto;
 	background: #87ceeb;
-	text-align: center;
-	padding: 1%;
+	padding: .5em;
 }
 
 a {
 	text-decoration: none;
 	color: #222;
 	font-weight: 700;
-	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -109,7 +108,6 @@ input[type="submit"] {
 	padding: 1em;
 	margin: auto;
 	text-decoration: none;
-	border-bottom: none;
 	color: #fff;
 	font-size: 1.5em;
 	width: 30em;
@@ -166,8 +164,12 @@ input[type="submit"] {
 	width: 1.5em;
 }
 
+#mobile {
+	display: none;
+}
+
 #waystohelp {
-	background: rgba(245,235,220,.25);
+	background: rgba(245,235,220,.5);
 	width: 90%;
 }
 
@@ -184,7 +186,70 @@ input[type="submit"] {
 }
 
 #join {
-	background: rgba(245,235,220,.5);
+	background: #ffed83;
 	width: 100%;
 	color: #222;
+}
+
+@media only screen and (max-width: 1142px) {
+	body {
+		font-size:18px;
+	}
+	nav a {
+		margin-right: 0;
+		padding: .75em;
+	}
+	nav img {
+	width: 3.5em;
+	}
+	.donate {
+		margin: .5em 0;
+		padding: .5em 1em;
+	}
+}
+
+@media only screen and (max-width: 954px) {
+	body {
+		font-size:16px;
+	}
+	nav a {
+		letter-spacing: .12em; 
+	}
+	.donate {
+		margin: .5em 0;
+		padding: .5em .5em;
+	}
+	div {
+		float: none;
+		width: 90%;
+	}
+	section {
+		width: 100%;
+	}
+	.gallery img {
+	width: 45%;
+	float: none;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	nav a {
+		display: none;
+		width: auto;
+	}
+	#logo {
+		display: block;
+		float: left;
+	}
+	#mobile {
+		display: block;
+		float: left;
+	}
+	nav:hover a {
+		display: block;
+		background: rgba(245,235,220,.5);
+	}
+	.header {
+		width: 20em;
+	}
 }
