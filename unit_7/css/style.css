@@ -203,7 +203,7 @@ input[type="submit"] {
 		padding: .75em;
 	}
 	#logo img {
-	width: 3.5em;
+		width: 3.5em;
 	}
 	.donate {
 		margin: .5em 0;
@@ -238,19 +238,25 @@ input[type="submit"] {
 @media only screen and (max-width: 768px) {
 	nav a {
 		letter-spacing: 0;
+		padding: .25em;
 	}
 	#logo img {
 		display: block;
 		float: left;
 	}
 	#donate-nav {
-		width:100%;
+		width: 100%;
 		bottom: 0;
 		position: fixed;
-		margin: auto;
 		float: none;
+		margin: 0;
+		display: block;
 	}
 	.header {
 		width: 20em;
+	}
+	#logo img {
+		width: 2em;
+		margin-top: .auto;
 	}
 }
