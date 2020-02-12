@@ -25,12 +25,7 @@ header {
 
 header > img {
 	width: 30em;
-	margin: auto;
-	padding: 1em 0 0 0;
-}
-
-nav {
-	background: rgba(245,235,220,.5)
+	padding-top: 1em;
 }
 
 nav a {
@@ -160,7 +155,9 @@ input[type="submit"] {
 }
 
 #nav {
-	background: rgba(245,235,220,.5)
+	background: rgba(245,235,220,.5);
+	width: 100%;
+	top: 1em;
 }
 
 #logo img {
@@ -171,12 +168,7 @@ input[type="submit"] {
 
 #donate-nav {
 	float: right;
-	display: inline-block;
 	margin: .25em 1em;
-}
-
-#mobile {
-	display: none;
 }
 
 #waystohelp {
@@ -251,9 +243,12 @@ input[type="submit"] {
 		display: block;
 		float: left;
 	}
-	nav:hover a {
-		display: block;
-		background: rgba(245,235,220,.5);
+	#donate-nav {
+		width:100%;
+		bottom: 0;
+		position: fixed;
+		margin: auto;
+		float: none;
 	}
 	.header {
 		width: 20em;
