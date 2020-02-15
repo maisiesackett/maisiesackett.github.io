@@ -23,11 +23,6 @@ header {
 	padding: 1em;
 }
 
-header > img {
-	width: 30em;
-	padding-top: 1em;
-}
-
 nav a {
 	padding: 1em;
 	color: #222;
@@ -110,6 +105,10 @@ input[type="submit"] {
 .btn:hover {
 	background-color: #ff7d5c;
 	box-shadow: 3px 3px 4px #222;
+	transition: opacity ease-in-out .5s; 
+	-webkit-transition: opacity ease-in-out .5s; 
+	-moz-transition: opacity ease-in-out .5s; 
+	-o-transition: opacity ease-in-out .5s; 
 }
 
 .donate {
@@ -125,6 +124,10 @@ input[type="submit"] {
 .donate:hover {
 	background-color: #3eb489;
 	box-shadow: 1.5px 1.5px 4px #222;
+	transition:opacity ease-in-out 5s; 
+	-webkit-transition:opacity ease-in-out .5s; 
+	-moz-transition:opacity ease-in-out .5s; 
+	-o-transition:opacity ease-in-out .5s; 
 }
 
 .gallery {
@@ -135,7 +138,7 @@ input[type="submit"] {
 .top3 {
 	float: left;
 	width: 33%;
-	padding: 1em;
+	padding: .5em;
 }
 
 .gallery img {
@@ -154,21 +157,42 @@ input[type="submit"] {
 	width: 1.5em;
 }
 
-#nav {
-	background: rgba(245,235,220,.5);
+#header-items {
+	background: rgba(245,235,220,.33);
 	width: 100%;
 	top: 1em;
+}
+
+#header-items img {
+	width: 30em;
+	padding-top: 1em;
+}
+
+#header-items label {
+	padding: 1em;
+	color: #222;
+	letter-spacing: .25em; 
+	font-family: 'Muli', 'Arial', sans-serif;
+	font-weight: 700;
+	display: none;
+	text-transform: uppercase;
+}
+
+#toggle {
+	display: none;
 }
 
 #logo img {
 	width:4em;
 	float: left;
-	margin: 0 .5em;
+	margin: 0 auto;
+	padding-top: 0;
 }
 
 #donate-nav {
 	float: right;
 	margin: .25em 1em;
+	vertical-align: middle;
 }
 
 #waystohelp {
@@ -199,7 +223,7 @@ input[type="submit"] {
 		font-size:18px;
 	}
 	nav a {
-		margin-right: 0;
+		margin-right: .5em;
 		padding: .75em;
 	}
 	#logo img {
@@ -230,15 +254,23 @@ input[type="submit"] {
 		width: 100%;
 	}
 	.gallery img {
-	width: 45%;
-	float: none;
+		width: 45%;
+		float: none;
 	}
 }
 
 @media only screen and (max-width: 768px) {
+	header {
+		padding: 0;
+	}
 	nav a {
-		letter-spacing: 0;
-		padding: .25em;
+		letter-spacing: 0
+	}
+	#header-items {
+		background: rgba(245,235,220,.33);
+	}
+	#donate-header {
+		display: none;
 	}
 	#logo img {
 		display: block;
@@ -249,15 +281,37 @@ input[type="submit"] {
 		bottom: 0;
 		position: fixed;
 		float: none;
-		
-		margin: 0;
+		margin: 0 auto;
 		display: block;
+		padding: 1em;
 	}
 	.header {
 		width: 20em;
 	}
 	#logo img {
-		width: 2em;
-		margin-top: .auto;
+		width: 3em;
+		margin-top: auto;
+	}
+}
+
+@media only screen and (max-width: 566px) {
+	nav {
+		display: none;
+	}
+	nav a:link {
+		display: block;
+	}
+	nav a {
+		background: rgba(245,235,220,.5);
+		margin: 1em;
+	}
+	#logo img {
+		float: none;
+	}
+	#header-items label {
+		display: block;
+	}
+	#toggle:checked + nav {
+		display: block;
 	}
 }
