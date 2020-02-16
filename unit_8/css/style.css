@@ -94,7 +94,6 @@ input[type="submit"] {
 
 .btn {
 	display: inline-block;
-	font-size: 1.5em;
 	margin: 1em 0;
 	padding: .5em 1.5em;
 	text-align: center;
@@ -110,7 +109,6 @@ input[type="submit"] {
 
 .donate {
 	display: inline-block;
-	font-size: 1.5em;
 	margin: 1em 0;
 	padding: .5em 1.5em;
 	text-align: center;
@@ -157,11 +155,6 @@ input[type="submit"] {
 	top: 1em;
 }
 
-#header-items img {
-	width: 30em;
-	padding-top: 1em;
-}
-
 #header-items label {
 	padding: 1em;
 	color: #222;
@@ -181,6 +174,12 @@ input[type="submit"] {
 	float: left;
 	margin: 0 auto;
 	padding-top: 0;
+}
+
+#full-logo {
+	width: 30em;
+	padding-top: 1em;
+	margin: auto;
 }
 
 #donate-nav {
@@ -229,7 +228,7 @@ input[type="submit"] {
 	}
 }
 
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 961px) {
 	body {
 		font-size:16px;
 	}
@@ -277,7 +276,8 @@ input[type="submit"] {
 		float: none;
 		margin: 0 auto;
 		display: block;
-		padding: 2em;
+		font-size: 2em;
+		padding: 1em;
 	}
 	.header {
 		width: 20em;
@@ -300,13 +300,17 @@ input[type="submit"] {
 		margin: 1em;
 	}
 	.header {
-		width: 15em;
+		width: 20em;
 	}
 	.gallery img {
 		width: 100%;
 	}
 	#logo img {
 		float: none;
+	}
+	#full-logo {
+		width: 20em;
+		padding-top: 1em;
 	}
 	#header-items label {
 		display: block;
