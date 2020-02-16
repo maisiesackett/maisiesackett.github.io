@@ -94,6 +94,7 @@ input[type="submit"] {
 
 .btn {
 	display: inline-block;
+	font-size: 1.5em;
 	margin: 1em 0;
 	padding: .5em 1.5em;
 	text-align: center;
@@ -109,6 +110,7 @@ input[type="submit"] {
 
 .donate {
 	display: inline-block;
+	font-size: 1.5em;
 	margin: 1em 0;
 	padding: .5em 1.5em;
 	text-align: center;
@@ -275,7 +277,7 @@ input[type="submit"] {
 		float: none;
 		margin: 0 auto;
 		display: block;
-		padding: 1em;
+		padding: 2em;
 	}
 	.header {
 		width: 20em;
@@ -296,6 +298,12 @@ input[type="submit"] {
 	nav a {
 		background: rgba(245,235,220,.5);
 		margin: 1em;
+	}
+	.header {
+		width: 15em;
+	}
+	.gallery img {
+		width: 100%;
 	}
 	#logo img {
 		float: none;
