@@ -68,6 +68,7 @@ input {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 1em;
+	-webkit-appearance: none;
 }
 
 input[type="submit"] {
@@ -96,6 +97,7 @@ input[type="submit"] {
 	display: inline-block;
 	margin: 1em 0;
 	padding: .5em 1.5em;
+	width: 10em;
 	text-align: center;
 	background: #ff9d5c;
 	box-shadow: 1.5px 1.5px 2px #222;
@@ -111,6 +113,7 @@ input[type="submit"] {
 	display: inline-block;
 	margin: 1em 0;
 	padding: .5em 1.5em;
+	width: 10em;
 	text-align: center;
 	background: #3eb449;
 	box-shadow: 1.5px 1.5px 2px #222;
@@ -235,9 +238,10 @@ input[type="submit"] {
 	nav a {
 		letter-spacing: .12em; 
 	}
-	.donate {
-		margin: .5em 0;
+	#donate-nav {
+		margin: .5em .5em;
 		padding: .5em .5em;
+		width: 5.5em;
 	}
 	.top3 {
 		float: none;
@@ -259,6 +263,9 @@ input[type="submit"] {
 	nav a {
 		letter-spacing: 0
 	}
+	footer {
+		padding: .5em .5em 5em;
+	}
 	#header-items {
 		background: rgba(245,235,220,.33);
 	}
@@ -276,7 +283,7 @@ input[type="submit"] {
 		float: none;
 		margin: 0 auto;
 		display: block;
-		font-size: 2em;
+		font-size: 1em;
 		padding: 1em;
 	}
 	.header {
