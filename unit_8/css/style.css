@@ -250,6 +250,9 @@ input[type="submit"] {
 	section {
 		width: 100%;
 	}
+	.gallery {
+		overflow: none;
+	}
 	.gallery img {
 		width: 45%;
 		float: none;
