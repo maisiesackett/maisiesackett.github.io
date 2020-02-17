@@ -225,13 +225,15 @@ input[type="submit"] {
 	#logo img {
 		width: 3.5em;
 	}
-	.donate {
-		margin: .5em 0;
-		padding: .5em 1em;
+	#donate-nav {
+		width: 7em;
+		margin: .5em .5em;
+		padding: .5em .5em;
 	}
+
 }
 
-@media only screen and (max-width: 961px) {
+@media only screen and (max-width: 964px) {
 	body {
 		font-size:16px;
 	}
