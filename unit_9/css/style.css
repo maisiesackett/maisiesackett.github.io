@@ -17,10 +17,10 @@ body {
 }
 
 header {
-	background-image: url(images/wangama-walking.jpg);
-	background-size: cover;
+	background: rgba(245,235,220,.33);
+	width: 100%;
+	top: 1em;
 	text-align: center;
-	padding: 1em;
 }
 
 nav label {
@@ -59,6 +59,29 @@ h2 {
 	text-transform: uppercase;
 }
 
+h3 {
+	padding: 1em;
+	margin: auto;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.5em;
+	width: 30em;
+}
+
+h4 {
+	font-weight: bold;
+	color: #87ceeb;
+}
+
+ul {
+	text-decoration: none;
+	padding-bottom: 1.5em;
+}
+
+li {
+	padding-bottom: .5em;
+}
+
 form {
 	text-align: center;
 }
@@ -84,15 +107,6 @@ input[type="submit"] {
 	content: " ";
 	clear: both;
 	height: 0;
-}
-
-.header {
-	padding: 1em;
-	margin: auto;
-	text-decoration: none;
-	color: #fff;
-	font-size: 1.5em;
-	width: 30em;
 }
 
 .btn {
@@ -151,10 +165,15 @@ input[type="submit"] {
 	width: 1.5em;
 }
 
+.italic {
+	font-style: italic;
+}
+
 #header-items {
-	background: rgba(245,235,220,.33);
-	width: 100%;
-	top: 1em;
+	background-image: url(images/wangama-walking.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 1em;
 }
 
 #nav-items {
@@ -215,6 +234,23 @@ input[type="submit"] {
 	color: #222;
 }
 
+#about-header {
+	background-image: url(images/wangama-walking.jpg);
+	background-size: cover;
+	text-align: center;
+	padding: 1em;
+}
+
+#about {
+	float: left;
+	width: 60%;
+}
+
+#board {
+	float: right;
+	width: 40%;
+}
+
 @media only screen and (max-width: 1172px) {
 	body {
 		font-size:18px;
@@ -270,16 +306,16 @@ input[type="submit"] {
 
 @media only screen and (max-width: 796px) {
 	header {
-		padding: 0;
+		background: rgba(245,235,220,.33);
+	}
+	h3 {
+		width: 20em;
 	}
 	footer {
 		padding: .5em .5em 5em;
 	}
-	.header {
-		width: 20em;
-	}
 	#header-items {
-		background: rgba(245,235,220,.33);
+		padding: 0;
 	}
 	#nav-items {
 		letter-spacing: 0
@@ -305,16 +341,27 @@ input[type="submit"] {
 		width: 3em;
 		margin-top: auto;
 	}
+	#about {
+		float: none;
+		width: 100%;
+	}
+	#board {
+		float: none;
+		width: 100%;
+	}
 }
 
 @media only screen and (max-width: 580px) {
+	header {
+		background: none;
+	}
 	nav label {
 		display: block;
 		letter-spacing: .12em;
 		background: rgba(245,235,220,.5);
 		margin: 1em;
 	}
-	.header {
+	h3 {
 		width: 100%;
 	}
 	.gallery img {
