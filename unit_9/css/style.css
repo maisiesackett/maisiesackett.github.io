@@ -23,12 +23,14 @@ header {
 	padding: 1em;
 }
 
-nav a {
+nav label {
 	padding: 1em;
 	color: #222;
 	letter-spacing: .25em; 
+	font-family: 'Muli', 'Arial', sans-serif;
 	font-weight: 700;
-	display: inline-block;
+	display: none;
+	text-transform: uppercase;
 }
 
 section {
@@ -99,13 +101,13 @@ input[type="submit"] {
 	padding: .5em 1.5em;
 	width: 10em;
 	text-align: center;
-	background: #999;
+	background: #ff9d5c;
 	box-shadow: 1.5px 1.5px 2px #222;
 	color: #fff;
 }
 
 .btn:hover {
-	background-color: #789;
+	background-color: #ff7d5c;
 	box-shadow: 3px 3px 4px #222;
 }
 
@@ -127,19 +129,16 @@ input[type="submit"] {
 
 .gallery {
 	width: 100%;
-	overflow: scroll;
+}
+
+.gallery img {
+	width: 22em;
 }
 
 .top3 {
 	float: left;
 	width: 33%;
 	padding: .5em;
-}
-
-.gallery img {
-	width: 19%;
-	float: left;
-	margin: .5%;
 }
 
 .social {
@@ -158,14 +157,16 @@ input[type="submit"] {
 	top: 1em;
 }
 
-#header-items label {
+#nav-items {
 	padding: 1em;
 	color: #222;
 	letter-spacing: .25em; 
-	font-family: 'Muli', 'Arial', sans-serif;
 	font-weight: 700;
-	display: none;
-	text-transform: uppercase;
+	display: inline-block;
+}
+
+#nav-items a {
+	margin: 0 .75em;
 }
 
 #toggle {
@@ -201,7 +202,7 @@ input[type="submit"] {
 }
 
 #involved {
-	color: #ff9d5c;
+	color: #ffcd73;
 }
 
 #mission {
@@ -218,8 +219,11 @@ input[type="submit"] {
 	body {
 		font-size:18px;
 	}
-	nav a {
-		margin-right: .5em;
+	#nav-items {
+		letter-spacing: .15em;
+	}
+	#nav-items a {
+		margin: .5em;
 		padding: .75em;
 	}
 	#logo img {
@@ -233,24 +237,16 @@ input[type="submit"] {
 
 }
 
-@media only screen and (max-width: 973px) {
+@media only screen and (max-width: 978px) {
 	body {
 		font-size:16px;
 	}
-	nav a {
-		letter-spacing: .12em; 
-	}
-	#donate-nav {
-		margin: .5em .5em;
-		padding: .5em .5em;
-		width: 5.5em;
+	section {
+		width: 100%;
 	}
 	.top3 {
 		float: none;
 		width: 90%;
-	}
-	section {
-		width: 100%;
 	}
 	.gallery {
 		overflow: none;
@@ -259,20 +255,34 @@ input[type="submit"] {
 		width: 45%;
 		float: none;
 	}
+	#nav-items {
+		letter-spacing: .12em; 
+	}
+	#nav-items a {
+		margin: .25em;
+	}
+	#donate-nav {
+		margin: .5em .5em;
+		padding: .5em .5em;
+		width: 5.5em;
+	}
 }
 
-@media only screen and (max-width: 773px) {
+@media only screen and (max-width: 796px) {
 	header {
 		padding: 0;
-	}
-	nav a {
-		letter-spacing: 0
 	}
 	footer {
 		padding: .5em .5em 5em;
 	}
+	.header {
+		width: 20em;
+	}
 	#header-items {
 		background: rgba(245,235,220,.33);
+	}
+	#nav-items {
+		letter-spacing: 0
 	}
 	#donate-header {
 		display: none;
@@ -291,23 +301,16 @@ input[type="submit"] {
 		font-size: 1.5em;
 		padding: 1em;
 	}
-	.header {
-		width: 20em;
-	}
 	#logo img {
 		width: 3em;
 		margin-top: auto;
 	}
 }
 
-@media only screen and (max-width: 566px) {
-	nav {
-		display: none;
-	}
-	nav a:link {
+@media only screen and (max-width: 580px) {
+	nav label {
 		display: block;
-	}
-	nav a {
+		letter-spacing: .12em;
 		background: rgba(245,235,220,.5);
 		margin: 1em;
 	}
@@ -317,6 +320,18 @@ input[type="submit"] {
 	.gallery img {
 		width: 100%;
 	}
+	#nav-items {
+		display: none;
+		padding: 0;
+		letter-spacing: .12em;
+	}
+	#nav-items a:link {
+		display: block;
+	}
+	#nav-items a {
+		background: rgba(245,235,220,.5);
+		margin: 1em;
+	}
 	#logo img {
 		float: none;
 	}
@@ -324,13 +339,7 @@ input[type="submit"] {
 		width: 20em;
 		padding-top: 1em;
 	}
-	#header-items label {
-		display: block;
-		letter-spacing: 0;
-		background: rgba(245,235,220,.5);
-		margin: 1em;
-	}
-	#toggle:checked + nav {
+	#toggle:checked + #nav-items {
 		display: block;
 	}
 }
