@@ -177,7 +177,7 @@ input[type="submit"] {
 }
 
 #nav-items {
-	padding: 1em;
+	padding: 1em 0;
 	color: #222;
 	letter-spacing: .25em; 
 	font-weight: 700;
@@ -207,7 +207,7 @@ input[type="submit"] {
 
 #donate-nav {
 	float: right;
-	margin: .25em 1em;
+	margin: .5em 1em;
 	vertical-align: middle;
 }
 
