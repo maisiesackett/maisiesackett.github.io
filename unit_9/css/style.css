@@ -58,6 +58,7 @@ h1 {
 	font-size: 5em;
 	text-transform: uppercase;
 	color: #fff;
+	line-height: 1em;
 }
 
 h2 {
@@ -88,6 +89,15 @@ ul {
 
 li {
 	padding-bottom: .5em;
+}
+
+th {
+	font-style: italic;
+}
+
+tr,td {
+	padding-right: 3em;
+	font-size: 1em;
 }
 
 form {
@@ -264,6 +274,33 @@ input[type="submit"] {
 	padding-top: 1em;
 }
 
+#contact {
+	float: left;
+	width: 60%;
+	padding: 4em 2em;
+}
+
+#contact-form {
+	float: right;
+	width: 40%;
+	padding: 4em 2em;
+}
+
+#contact-wangama {
+	text-align: left;
+}
+
+#info {
+	width: 15em;
+}
+
+#message {
+	width: 20em;
+	height: 13em;
+}
+
+
+
 @media only screen and (max-width: 1172px) {
 	body {
 		font-size:18px;
@@ -317,12 +354,28 @@ input[type="submit"] {
 	}
 }
 
+@media only screen and (max-width: 835px) {
+	#contact {
+		float: none;
+		width: 100%;
+		padding: 4em;
+	}
+	#contact-form {
+		float: none;
+		width: 100%;
+		padding: 4em;
+	}
+}
+
 @media only screen and (max-width: 796px) {
 	header {
 		background: rgba(245,235,220,.33);
 	}
 	h3 {
 		width: 20em;
+	}
+	td {
+		font-size: .75em;
 	}
 	footer {
 		padding: .5em .5em 5em;
@@ -373,6 +426,9 @@ input[type="submit"] {
 		letter-spacing: .12em;
 		background: rgba(245,235,220,.5);
 		margin: 1em;
+	}
+	h1 {
+		margin-top: .5em;
 	}
 	h3 {
 		width: 100%;
